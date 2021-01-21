@@ -1,0 +1,39 @@
+<view class="user">
+    <!-- 用户背景 -->
+    <view class="backgroundImageWrapper">
+        <image class="backgroundImage" src="../../styles/images/personal/user-bg.jpg" mode="widthFix"></image>
+        <view class="userInfo" wx:if="{{userInfo.nickName}}">
+            <image class="avatar" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+            <text class="name">{{userInfo.nickName}}</text>
+        </view>
+        <view class="toLogin" wx:else>
+            <navigator url="/pages/login/login" open-type="navigate">
+                登录
+            </navigator>
+        </view>
+    </view>
+    <!-- 应用相关 -->
+    <view class="appInfoWrapper">
+        <view class="appInfo">
+            <!-- 历史足迹 -->
+            <view class="history">
+                <navigator>
+                    <view class="num">0</view>
+                    <view class="text">收藏的店铺</view>
+                </navigator>
+                <navigator url="/pages/collect/collect" open-type="navigate">
+                    <view class="num">{{collectNum}}</view>
+                    <view class="text">收藏的商品</view>
+                </navigator>
+                <navigator>
+                    <view class="num">0</view>
+                    <view class="text">关注的商品</view>
+                </navigator>
+                <navigator url="/pages/history/history" open-type="navigate">
+                    <view class="num">{{historyNum}}</view>
+                    <view class="text">我的足迹</view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

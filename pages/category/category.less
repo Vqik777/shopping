@@ -1,0 +1,50 @@
+.category {
+    .categoryContainer {
+        display: flex;
+
+        .leftMenu {
+            flex: 2;
+            height: ~'calc(100vh - 90rpx)';
+
+            .leftMenuItem {
+                height: 80rpx;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &.active{
+                    color: #fa5478;
+                }
+            }
+        }
+
+        .rightContent {
+            flex: 5;
+            height: ~'calc(100vh - 90rpx)';
+
+            .goodsItem {
+                .title {
+                    height: 80rpx;
+                    text-align: center;
+                    line-height: 80rpx;
+                }
+
+                .content {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    navigator {
+                        width: 33.33%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        image {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

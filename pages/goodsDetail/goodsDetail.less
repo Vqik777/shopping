@@ -1,0 +1,98 @@
+.goodsDetail {
+    .goodsDetailSwiper {
+        height: 60vw;
+        text-align: center;
+
+        image {
+            width: 55vw;
+        }
+    }
+
+    .price {
+        color: #fa5478;
+        font-size: 32rpx;
+        font-weight: 600;
+        padding: 10rpx;
+    }
+
+    .row {
+        display: flex;
+        padding: 10rpx;
+
+        .name {
+            flex: 5;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+        .collect {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-left: 1rpx solid #666;
+            .icon-meirituijian{
+                &.active{
+                    color: #fa5478;
+                }
+            }
+        }
+    }
+
+    .info {
+        padding-bottom: 90rpx;
+
+        .title {
+            font-size: 32rpx;
+            font-weight: 600;
+            color: #fa5478;
+            padding: 10rpx;
+        }
+    }
+
+    .footerTool {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 90rpx;
+        display: flex;
+        background-color: white;
+
+        .toolItem {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            button {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+        }
+
+        .cart,
+        .buy {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .cart {
+            background-color: #ffa500;
+        }
+
+        .buy {
+            background-color: #fa5478;
+        }
+    }
+}

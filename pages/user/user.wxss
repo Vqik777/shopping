@@ -1,0 +1,72 @@
+.user {
+  height: 100%;
+}
+.user .backgroundImageWrapper {
+  height: 45vh;
+  position: relative;
+}
+.user .backgroundImageWrapper .backgroundImage {
+  width: 100%;
+  filter: blur(5rpx);
+}
+.user .backgroundImageWrapper .userInfo {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user .backgroundImageWrapper .userInfo .avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user .backgroundImageWrapper .userInfo .name {
+  font-size: 40rpx;
+  font-weight: 400;
+  margin-top: 30rpx;
+}
+.user .backgroundImageWrapper .toLogin {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  background-color: yellow;
+  border-radius: 50%;
+}
+.user .backgroundImageWrapper .toLogin navigator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user .appInfoWrapper {
+  position: relative;
+  height: 100%;
+  background-color: #dedede;
+}
+.user .appInfoWrapper .appInfo {
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: -60rpx;
+  transform: translateX(-50%);
+}
+.user .appInfoWrapper .appInfo .history {
+  display: flex;
+  background-color: white;
+  padding: 5rpx 0;
+}
+.user .appInfoWrapper .appInfo .history navigator {
+  flex: 1;
+  text-align: center;
+}
+.user .appInfoWrapper .appInfo .history navigator .num {
+  color: #fa5478;
+}

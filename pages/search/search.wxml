@@ -1,0 +1,14 @@
+<view class="search">
+    <!-- 搜索框 -->
+    <view class="searchRow">
+        <input value="{{inputValue}}" placeholder="请输入你要搜索的内容" bindinput="handleInput"></input>
+        <button hidden="{{isHideButton}}" bindtap="handleButton">取消</button>
+    </view>
+    <!-- 搜索内容 -->
+    <scroll-view class="searchContent" scroll-y>
+        <navigator wx:for="{{goodsQsearch}}" wx:key="goods_id" class="searchItem"
+            url="/pages/goodsDetail/goodsDetail?goodsid={{item.goods_id}}" open-type="navigate">
+            {{item.goods_name}}
+        </navigator>
+    </scroll-view>
+</view>

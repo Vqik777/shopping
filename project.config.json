@@ -1,0 +1,119 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.14.4",
+  "appid": "wxff47317f11256999",
+  "projectname": "小柒商城",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "isGameTourist": false,
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "分类",
+          "pathName": "pages/category/category",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商品列表",
+          "pathName": "pages/goodsList/goodsList",
+          "query": "cid=5",
+          "scene": null
+        },
+        {
+          "name": "商品详情",
+          "pathName": "pages/goodsDetail/goodsDetail",
+          "query": "goodsid=43986",
+          "scene": null
+        },
+        {
+          "name": "购物车",
+          "pathName": "pages/cart/cart",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/user/user",
+          "query": "goodsid=43986",
+          "scene": null
+        },
+        {
+          "name": "登录",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "收藏",
+          "pathName": "pages/collect/collect",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "历史足迹",
+          "pathName": "pages/history/history",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "搜索",
+          "pathName": "pages/search/search",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

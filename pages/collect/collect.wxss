@@ -1,0 +1,33 @@
+.collect .goodsItem {
+  display: flex;
+}
+.collect .goodsItem .imageWrapper {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collect .goodsItem .imageWrapper image {
+  width: 80%;
+}
+.collect .goodsItem .infoWrapper {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.collect .goodsItem .infoWrapper .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.collect .goodsItem .infoWrapper .price {
+  color: #fa5478;
+}
+.collect .null {
+  font-size: 60rpx;
+  text-align: center;
+  line-height: 300rpx;
+}

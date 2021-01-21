@@ -1,0 +1,21 @@
+<view class="history">
+    <view class="clearButtonWrapper">
+        <button type="primary" plain bindtap="handleClearButton">清空历史足迹</button>
+    </view>
+    <scroll-view class="historyScroll" scroll-y>
+        <navigator url="/pages/goodsDetail/goodsDetail?goodsid={{item.goods_id}}" class="goodsItem"
+            wx:for="{{history}}" wx:key="goods_id">
+            <view class="imageWrapper">
+                <image src="{{item.goods_small_logo?item.goods_small_logo:'/styles/images/qik777.jpg'}}"
+                    mode="widthFix">
+                </image>
+            </view>
+            <view class="infoWrapper">
+                <view class="name">{{item.goods_name}}
+                </view>
+                <view class="price">￥{{item.goods_price}}</view>
+            </view>
+        </navigator>
+    </scroll-view>
+
+</view>

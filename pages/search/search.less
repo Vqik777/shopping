@@ -1,0 +1,44 @@
+.search {
+    height: 100%;
+    background-color: #dedede;
+    padding: 0 30rpx;
+
+    .searchRow {
+        height: 120rpx;
+        padding: 20rpx 0;
+        display: flex;
+
+        input {
+            flex: 1;
+            height: 100%;
+            background-color: white;
+            padding-left: 10rpx;
+        }
+
+        button {
+            width: 100rpx;
+            height: 100%;
+            margin-left: 10rpx;
+            padding: 0;
+            font-size: 26rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .searchContent {
+        height: ~'calc(100vh - 120rpx)';
+        .searchItem {
+            height: 80rpx;
+            line-height: 80rpx;
+            padding-left: 10rpx;
+            background-color: white;
+            border-bottom: 1rpx solid #dedede;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+        }
+    }
+}

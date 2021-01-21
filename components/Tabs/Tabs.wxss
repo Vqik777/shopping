@@ -1,0 +1,12 @@
+.tabs .title {
+  display: flex;
+}
+.tabs .title .tabsItem {
+  flex: 1;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+.tabs .title .tabsItem.active {
+  border-bottom: 1rpx solid #fa5478;
+}

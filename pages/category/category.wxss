@@ -1,0 +1,39 @@
+.category .categoryContainer {
+  display: flex;
+}
+.category .categoryContainer .leftMenu {
+  flex: 2;
+  height: calc(100vh - 90rpx);
+}
+.category .categoryContainer .leftMenu .leftMenuItem {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category .categoryContainer .leftMenu .leftMenuItem.active {
+  color: #fa5478;
+}
+.category .categoryContainer .rightContent {
+  flex: 5;
+  height: calc(100vh - 90rpx);
+}
+.category .categoryContainer .rightContent .goodsItem .title {
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.category .categoryContainer .rightContent .goodsItem .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.category .categoryContainer .rightContent .goodsItem .content navigator {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.category .categoryContainer .rightContent .goodsItem .content navigator image {
+  width: 70%;
+}

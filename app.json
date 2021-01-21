@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/goodsList/goodsList",
+    "pages/goodsDetail/goodsDetail",
+    "pages/cart/cart",
+    "pages/login/login",
+    "pages/user/user",
+    "pages/collect/collect",
+    "pages/history/history",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fa5478",
+    "navigationBarTitleText": "小柒商城",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "",
+    "selectedColor": "",
+    "backgroundColor": "",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/styles/images/tabs/tab-home.png",
+        "selectedIconPath": "/styles/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "/styles/images/tabs/tab-home.png",
+        "selectedIconPath": "/styles/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/styles/images/tabs/tab-home.png",
+        "selectedIconPath": "/styles/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/styles/images/tabs/tab-home.png",
+        "selectedIconPath": "/styles/images/tabs/tab-home-current.png"
+      }
+    ]
+  }
+}

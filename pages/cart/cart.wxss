@@ -1,0 +1,110 @@
+.cart .addressButtonWrapper {
+  padding: 20rpx;
+}
+.cart .addressInfo {
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #666;
+}
+.cart .addressInfo .leftInfo {
+  flex: 4;
+}
+.cart .addressInfo .rightPhone {
+  flex: 2;
+  text-align: right;
+}
+.cart .cartWrapper {
+  padding-bottom: 80rpx;
+}
+.cart .cartWrapper .title {
+  color: #fa5478;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #666;
+}
+.cart .cartWrapper .content .cartItem {
+  display: flex;
+  padding: 10rpx;
+}
+.cart .cartWrapper .content .cartItem .checkboxWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .cartWrapper .content .cartItem .imageWrapper {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .cartWrapper .content .cartItem .imageWrapper image {
+  width: 80%;
+}
+.cart .cartWrapper .content .cartItem .priceWrapper {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart .cartWrapper .content .cartItem .priceWrapper .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.cart .cartWrapper .content .cartItem .priceWrapper .row {
+  display: flex;
+  justify-content: space-between;
+}
+.cart .cartWrapper .content .cartItem .priceWrapper .row .price {
+  color: #fa5478;
+}
+.cart .cartWrapper .content .cartItem .priceWrapper .row .editWrapper {
+  display: flex;
+}
+.cart .cartWrapper .content .cartItem .priceWrapper .row .editWrapper .edit,
+.cart .cartWrapper .content .cartItem .priceWrapper .row .editWrapper .number {
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  border: 1rpx solid #666;
+}
+.cart .cartWrapper .content .cartItem .priceWrapper .row .editWrapper .number {
+  border: none;
+}
+.cart .cartWrapper .cartNull image {
+  width: 100%;
+}
+.cart .footerTool {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  background-color: white;
+  border-top: 2rpx solid #666;
+}
+.cart .footerTool .checkboxWrapper {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .footerTool .priceWrapper {
+  flex: 4;
+  text-align: right;
+  padding-right: 10rpx;
+}
+.cart .footerTool .priceWrapper .totalPrice text {
+  color: #fa5478;
+}
+.cart .footerTool .pay {
+  flex: 2;
+  background-color: #fa5478;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

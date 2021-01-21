@@ -1,0 +1,20 @@
+<view class="collect">
+    <block wx:if="{{collect.length}}">
+        <navigator url="/pages/goodsDetail/goodsDetail?goodsid={{item.goods_id}}" class="goodsItem" wx:for="{{collect}}"
+            wx:key="goods_id">
+            <view class="imageWrapper">
+                <image src="{{item.goods_small_logo?item.goods_small_logo:'/styles/images/qik777.jpg'}}"
+                    mode="widthFix">
+                </image>
+            </view>
+            <view class="infoWrapper">
+                <view class="name">{{item.goods_name}}
+                </view>
+                <view class="price">￥{{item.goods_price}}</view>
+            </view>
+        </navigator>
+    </block>
+    <block wx:else>
+        <view class="null">你还没收藏任何商品</view>
+    </block>
+</view>

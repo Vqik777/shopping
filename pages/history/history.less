@@ -1,0 +1,44 @@
+.history {
+    .clearButtonWrapper {
+        height: 120rpx;
+        padding: 20rpx;
+    }
+
+    .historyScroll {
+        height: ~'calc(100vh - 120rpx)';
+        .goodsItem {
+            display: flex;
+
+            .imageWrapper {
+                flex: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                image {
+                    width: 80%;
+                }
+            }
+
+            .infoWrapper {
+                flex: 4;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .name {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+
+                .price {
+                    color: #fa5478;
+                }
+            }
+        }
+    }
+
+}

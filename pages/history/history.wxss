@@ -1,0 +1,35 @@
+.history .clearButtonWrapper {
+  height: 120rpx;
+  padding: 20rpx;
+}
+.history .historyScroll {
+  height: calc(100vh - 120rpx);
+}
+.history .historyScroll .goodsItem {
+  display: flex;
+}
+.history .historyScroll .goodsItem .imageWrapper {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.history .historyScroll .goodsItem .imageWrapper image {
+  width: 80%;
+}
+.history .historyScroll .goodsItem .infoWrapper {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.history .historyScroll .goodsItem .infoWrapper .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.history .historyScroll .goodsItem .infoWrapper .price {
+  color: #fa5478;
+}

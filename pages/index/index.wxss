@@ -1,0 +1,35 @@
+.index .indexScroll {
+  height: calc(100vh - 90rpx);
+}
+.index .indexScroll .indexSwiper {
+  height: 340rpx;
+}
+.index .indexScroll .indexSwiper image {
+  width: 100%;
+}
+.index .indexScroll .nav {
+  display: flex;
+}
+.index .indexScroll .nav .navItem {
+  flex: 1;
+  padding: 15rpx;
+}
+.index .indexScroll .nav .navItem image {
+  width: 100%;
+}
+.index .indexScroll .floor .floorItem .title image {
+  width: 100%;
+}
+.index .indexScroll .floor .floorItem .content {
+  overflow: hidden;
+}
+.index .indexScroll .floor .floorItem .content navigator {
+  float: left;
+  width: 33.33%;
+}
+.index .indexScroll .floor .floorItem .content navigator:nth-last-child(-n+4) image {
+  height: 27.72711207vw;
+}
+.index .indexScroll .floor .floorItem .content navigator image {
+  width: 100%;
+}

@@ -1,0 +1,54 @@
+.index {
+    .indexScroll{
+        height: ~'calc(100vh - 90rpx)';
+        .indexSwiper {
+            height: 340rpx;
+    
+            image {
+                width: 100%;
+            }
+        }
+    
+        .nav {
+            display: flex;
+    
+            .navItem {
+                flex: 1;
+                padding: 15rpx;
+    
+                image {
+                    width: 100%;
+                }
+            }
+        }
+    
+        .floor {
+            .floorItem {
+                .title {
+                    image {
+                        width: 100%;
+                    }
+                }
+    
+                .content {
+                    overflow: hidden;
+                    navigator {
+                        float: left;
+                        width: 33.33%;
+    
+                        &:nth-last-child(-n+4) {
+                            image {
+                                height: 33.33vw * 386 / 232 / 2;
+                            }
+                        }
+    
+                        image {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}

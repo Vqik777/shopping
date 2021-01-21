@@ -1,0 +1,29 @@
+<view class="category">
+    <!-- 搜索框 -->
+    <SearchInput></SearchInput>
+    <!-- 分类容器 -->
+    <view class="categoryContainer">
+        <!-- 左侧菜单 -->
+        <scroll-view class="leftMenu" scroll-y>
+            <view class="leftMenuItem {{currentIndex==index?'active':''}}" wx:for="{{leftMenu}}" wx:key="*this"
+                bindtap="handleLeftMenuItem" data-index="{{index}}">
+                {{item}}
+            </view>
+        </scroll-view>
+
+        <!-- 右侧商品 -->
+        <scroll-view class="rightContent" scroll-y scroll-top="{{scrollTop}}">
+            <view class="goodsItem" wx:for="{{rightContent}}" wx:key="cat_id" wx:for-item="item1" wx:for-index="index1">
+                <view class="title">{{item1.cat_name}}</view>
+                <view class="content">
+                    <navigator url="/pages/goodsList/goodsList?cid={{item2.cat_id}}" wx:for="{{item1.children}}"
+                        wx:key="cat_id" wx:for-item="item2" wx:for-index="index2">
+                        <image src="{{item2.cat_icon}}" mode="widthFix"> </image>
+                        <view class="text">{{item2.cat_name}}</view>
+                    </navigator>
+                </view>
+            </view>
+        </scroll-view>
+
+    </view>
+</view>

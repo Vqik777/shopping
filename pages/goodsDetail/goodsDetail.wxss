@@ -1,0 +1,81 @@
+.goodsDetail .goodsDetailSwiper {
+  height: 60vw;
+  text-align: center;
+}
+.goodsDetail .goodsDetailSwiper image {
+  width: 55vw;
+}
+.goodsDetail .price {
+  color: #fa5478;
+  font-size: 32rpx;
+  font-weight: 600;
+  padding: 10rpx;
+}
+.goodsDetail .row {
+  display: flex;
+  padding: 10rpx;
+}
+.goodsDetail .row .name {
+  flex: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goodsDetail .row .collect {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1rpx solid #666;
+}
+.goodsDetail .row .collect .icon-meirituijian.active {
+  color: #fa5478;
+}
+.goodsDetail .info {
+  padding-bottom: 90rpx;
+}
+.goodsDetail .info .title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #fa5478;
+  padding: 10rpx;
+}
+.goodsDetail .footerTool {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  background-color: white;
+}
+.goodsDetail .footerTool .toolItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.goodsDetail .footerTool .toolItem button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.goodsDetail .footerTool .cart,
+.goodsDetail .footerTool .buy {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.goodsDetail .footerTool .cart {
+  background-color: #ffa500;
+}
+.goodsDetail .footerTool .buy {
+  background-color: #fa5478;
+}
